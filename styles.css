@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(50deg, #4CAF50, #2196F3);
+  color: white;
+  text-align: center;
+  padding: 2em 0;
+  position: relative; /* Allows the profile picture to be positioned in the top-right */
+}
+/* give me code for font color for header text -about,skills,projects,experience*/
+
+header a {
+  color: black;
+  text-decoration: underline=none;
+  margin: 0 1em;
+}
+
+.header-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: 3px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section {
+  padding: 2em;
+  max-width: 800px;
+  margin: auto;
+  background-color: white;
+  margin-bottom: 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+  color: #4CAF50;
+  margin-bottom: 0.8em;
+  font-size: 1.8em;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 0.2em;
+}
+
+.contact-info p, .skills-list span {
+  margin-bottom: 0.5em;
+}
+
+.contact-info a {
+  color: #2196F3;
+  text-decoration: none;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
+.skills-list span {
+  background: #4CAF50;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  font-size: 0.9em;
+  transition: transform 0.2s;
+}
+
+.skills-list span:hover {
+  transform: scale(1.1);
+  background: #2196F3;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1em;
+}
+
+.project-card, .experience-card {
+  background: #f9f9f9;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.project-card:hover, .experience-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card h3, .experience-card h3 {
+  color: #2196F3;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+footer a {
+  color: #4CAF50;
+  text-decoration: none;
+}
